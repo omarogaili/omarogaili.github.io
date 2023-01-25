@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image.jpg" sizes="32x32" href="sida-logo.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Kontakt</title>
+</head>
+
+<body class="subpage">
+    <header class="header">
+        <h1>Omar <span>Ogaili</span></h1>
+        <nav class="navbar">
+            <a href="index.html" class="link">Home</a>
+            <a href="blog.html" class="link">Blogg</a>
+            <a href="om-mig.html" class="link">Kontakt</a>
+            <div class="menu">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="https://www.facebook.com/mason.omar.3" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/oie__net/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/OgailiSvensson" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCbO69qz1o5a03XFjql-qjgw" target="_blank"
+                        class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contakt-form">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                    <h1 class="header-title">
+                        Fråga mig
+                    </h1>
+                </div>
+                <div class="m-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                        <div class="mb-6">
+                            <input type="text" name="name" id="name" placeholder="Ditt Namn" required
+                                class="input-name1" />
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" name="email" id="email" placeholder="din@mejl.com" required
+                                class="input-name2" />
+                        </div>
+                        <div class="mb-6">
+                            <textarea rows="5" name="message" id="message" placeholder="skriv ditt meddelande"
+                                class="input-name3" required></textarea>
+                        </div>
+                        <div class="mb-6">
+                            <button type="submit" class="button-submit">
+                                <p>Send Message</p>
+                            </button>
+                        </div>
+                        <p class="text-base text-center text-gray-400" id="result"></p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="links-int1">
+        <ul>
+            <li class="facebook"><a href="https://www.facebook.com/mason.omar.3">
+                    <i class="fa fa-facebook"></i>
+                </a></li>
+            <li class="Email"><a href="mailto:ogailiomar@hotmail.com" target="_blank"> <i
+                        class="fa fa-envelope"></i></a>
+            </li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCbO69qz1o5a03XFjql-qjgw" target="_blank"> <i
+                        class="fa fa-youtube"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/oie__net/" target="_blank"><i
+                        class="fa fa-instagram"></i></a></li>
+        </ul>
+        <hr>
+        <p>Du kan kontakt mig i mina social media länkar Ovan</p>
+    </div>
+    <footer class="footer">
+        <div class="footer-img">
+            <img src="sida-logo.jpg" alt="logo Bild">
+        </div>
+        <!--<div class="links-footer">
+          <h6>Kontakt<span> mig</span> här:</h6>
+          <a href="mailto:ogailiomar@hotmail.com" class="fa fa-envelope" target="_blank"></a>
+    
+          <a href="https://www.youtube.com/channel/UCbO69qz1o5a03XFjql-qjgw" class="fa fa-youtube" target="_blank"></a>-->
+
+
+        </div>
+        <h6>Kontakt<span> mig</span> här:</h6>
+        <div class="links-int">
+
+            <ul>
+                <li class="facebook"><a href="https://www.facebook.com/mason.omar.3">
+                        <i class="fa fa-facebook"></i>
+                    </a></li>
+                <li class="Email"><a href="mailto:ogailiomar@hotmail.com" target="_blank"> <i
+                            class="fa fa-envelope"></i></a>
+                </li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCbO69qz1o5a03XFjql-qjgw" target="_blank">
+                        <i class="fa fa-youtube"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/oie__net/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+
+            </ul>
+            <p id="copyr">
+                <br>
+                &copy;Omar Ogaili
+            </p>
+        </div>
+        <script src="css/main.js"></script>
+        <script src="mail.js"></script>
+</body>
+
+</html>
