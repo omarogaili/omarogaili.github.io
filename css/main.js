@@ -33,6 +33,9 @@ btn.addEventListener("click", () => {
   output.innerText = selectedSize ? `Du valde ${selectedSize}. Rätt svar är Integer`  : `Du har inte valt något`;
 })
 
+
+
+
 var form = document.getElementById("post-form");
 form.addEventListener("submit", function(e) {
   e.preventDefault(); // för att förhindra formuläret från att skickas till en annan sida
