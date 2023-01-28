@@ -33,6 +33,25 @@ btn.addEventListener("click", () => {
   output.innerText = selectedSize ? `Du valde ${selectedSize}. Rätt svar är Integer`  : `Du har inte valt något`;
 })
 
+var form = document.getElementById("post-form");
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // för att förhindra formuläret från att skickas till en annan sida
+  var input = document.getElementById("post-input");
+  var post = input.value;
+  // Skicka posten till servern
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/post");
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      // Visa upp posten på webbsidan
+      var output = document.getElementById("output");
+      output.innerHTML = response.post;
+    }
+  };
+  xhr.send(JSON.stringify({ post: post }));
+});
 
 
 
