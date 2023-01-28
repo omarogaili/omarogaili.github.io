@@ -1059,5 +1059,7 @@ footer img {
   .links-int1{
     display: hidden
   }
-  
+  output{
+    color:inherit;
+    }
 }
